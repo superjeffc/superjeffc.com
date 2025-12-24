@@ -1,0 +1,208 @@
+---
+layout: recipe
+title: Pad Kra Pao
+---
+<img src="https://assets.superjeffc.com/food/pad-kra-pao.jpg" alt="Pad Kra Pao" class="recipe-hero">
+
+<div class="recipe-container">
+
+  <header class="recipe-header">
+    <h1>Pad Kra Pao</h1>
+    <div class="recipe-meta">
+      <span>⏱️ 15 Mins</span>
+      <span>🥣 Serves 2</span>
+    </div>
+  </header>
+
+  <div class="recipe-content">
+
+    <aside class="recipe-ingredients">
+      <h3>Ingredients</h3>
+      <ul class="ingredient-list">
+        <li>Basil leaves (2 cups)</li>
+        <li>Chicken breast</li>
+        <li>Soy Sauce</li>
+        <li>Dark Soy Sauce</li>
+        <li>Oyster Sauce</li>
+        <li>Fish Sauce</li>
+        <li>Sugar</li>
+        <li>String beans</li>
+        <li>Garlic cloves (5)</li>
+        <li>Egg</li>
+        <li>Canola oil</li>
+      </ul>
+    </aside>
+
+    <section class="recipe-steps">
+      <h3>Instructions</h3>
+      <ol class="step-list">
+        <li>Add 1 tbsp of soy sauce.</li>
+        <li>Add 1 tbsp of dark soy sauce.</li>
+        <li>Add 1 tbsp of oyster sauce.</li>
+        <li>Add 1 tbsp of fish sauce.</li>
+        <li>Add 2 tbsp of water.</li>
+        <li>Add 1 tsp of sugar.</li>
+        <li>Mix well.</li>
+        <li>Cut chicken breast into bite sized chunks.</li>
+        <li>Cut string beans into bite sized chunks.</li>
+        <li>Crush garlic cloves.</li>
+        <li>Add canola oil to a wok and turn on heat.</li>
+        <li>Add garlic cloves and cook until brown.</li>
+        <li>Add chicken and cooking sauce and cook until chicken is done.</li>
+        <li>Temporarily remove chicken from wok and place into a bowl.</li>
+        <li>Cook string beans.</li>
+        <li>Re-add cooked chicken and mix well.</li>
+        <li>Turn off heat and wait a few seconds for wok to cool down.</li>
+        <li>Add basil leaves and mix well.</li>
+        <li>Add canola oil to non-stick pan and turn on heat.</li>
+        <li>Crack an egg into the pan.</li>
+        <li>Cook the egg until the edges are brown and the yolk is cooked to your liking.</li>
+      </ol>
+    </section>
+
+  </div>
+</div>
+
+
+<style>
+  /* Base Variables for Consistency */
+  :root {
+    --primary-color: #2c3e50;
+    --accent-color: #e67e22; /* A nice food-appetizing orange */
+    --bg-color: #f8f9fa;
+    --card-bg: #ffffff;
+    --text-color: #333;
+    --border-radius: 12px;
+  }
+
+  /* Layout & Container */
+  .recipe-container {
+    max-width: 900px;
+    margin: -40px auto 40px; /* Pulls card up over hero image */
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    position: relative;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text-color);
+  }
+
+  /* Hero Image Styling */
+  .recipe-hero {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+  }
+
+  /* Typography */
+  .recipe-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  .recipe-meta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+  }
+
+  /* Two-Column Layout for Desktop */
+  .recipe-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Ingredients narrow, steps wide */
+    gap: 40px;
+  }
+
+  /* Interactive Ingredients List */
+  .ingredient-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .ingredient-list li {
+    margin-bottom: 12px;
+  }
+
+  .ingredient-list label {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+
+  .ingredient-list input[type="checkbox"] {
+    margin-right: 12px;
+    accent-color: var(--accent-color);
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Strikethrough effect when checked */
+  .ingredient-list input:checked + span,
+  .ingredient-list input:checked + label {
+    text-decoration: line-through;
+    color: #999;
+  }
+
+  /* Steps Styling */
+  .step-list {
+    counter-reset: step-counter;
+    list-style: none;
+    padding: 0;
+  }
+
+  .step-list li {
+    position: relative;
+    padding-left: 50px;
+    margin-bottom: 25px;
+    line-height: 1.6;
+  }
+
+  .step-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 32px;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .recipe-content {
+      grid-template-columns: 1fr; /* Stack vertically on mobile */
+    }
+
+    .recipe-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  }
+</style>
