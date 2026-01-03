@@ -1,9 +1,9 @@
 body {
-    margin: 0 auto;
-    width: 70%;
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
-    padding-top: 60px;
-    position: relative;
+    min-height: 100dvh;
+    font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
 body::before {
@@ -12,59 +12,31 @@ body::before {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
-    height: 100vh;
+    height: 100lvh;
     z-index: -1;
     background: url("../harpa_ceiling.webp") no-repeat center center;
     background-size: cover;
-    will-change: transform;
+    transform: translateZ(0);
 }
 
-@media (max-width: 768px) {
-    body {
-        width: 90%;
-    }
-}
-nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-}
-nav ul li, footer ul li {
-    display: inline;
-    margin-right: 20px;
-    font-size: 1.5em;
-}
-a {
-    text-decoration: none;
-    color: #0660FE;
-}
-a:hover {
-    text-decoration: underline;
-}
-h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
-}
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    color: #333;
-}
-footer {
-    margin-top: 20px;
-    border-top: 1px solid #000000;
-    font-size: .8em;
+.container {
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 60px;
+    position: relative;
 }
 
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
-}
+h1 { font-size: 3em; margin-bottom: 0.5rem; }
+h2 { font-size: 2.2em; margin-top: 2rem; }
+p { font-size: 1.5em; line-height: 1.4em; color: #333; }
+a { text-decoration: none; color: #0660FE; transition: color 0.2s; }
+a:hover { text-decoration: underline; color: #0046cc; }
 
-ul.posts li {
-    list-style: none;
+.divider {
+    border: 0;
+    height: 1px;
+    background: rgba(0,0,0,0.1);
+    margin: 3rem 0;
 }
 
 .profile-pic {
@@ -73,78 +45,83 @@ ul.posts li {
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    margin: 0 0 1rem 0;
-}
-
-.contact-link {
-    display: inline-block;
-    margin-top: 60px;
-    text-decoration: none;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .social-links {
     display: flex;
     gap: 15px;
-    margin: 20px 0;
+    margin: 25px 0;
 }
 
 .social-icon {
     color: #333;
-    transition: color 0.2s ease, transform 0.2s ease;
+    transition: color 0.2s, transform 0.2s;
 }
 
 .social-links a:hover .social-icon {
     transform: scale(1.1);
 }
 
-.social-links a[title="LinkedIn"]:hover .social-icon {
-    color: #0077B5;
-}
+.social-links a[title="LinkedIn"]:hover .social-icon { color: #0077B5; }
+.social-links a[title="GitHub"]:hover .social-icon { color: #24292e; }
 
-.social-links a[title="GitHub"]:hover .social-icon {
-    color: #24292e;
-}
-
-.btn-resume {
-    font-size: 0.8em;
-    border: 2px solid #333;
-    padding: 8px 16px;
-    border-radius: 5px;
-    vertical-align: middle;
-}
-.btn-resume:hover {
-    background: #333;
-    color: #fff;
-}
-
-/* Project Grid */
 .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     margin-top: 20px;
-    text-align: left;
+    padding-bottom: 40px;
 }
 
-/* Cards */
 .card {
     border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 20px;
-    transition: transform 0.2s, box-shadow 0.2s;
-    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    background: #ffffff;
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
+
 .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
-.card h3 {
-    margin-top: 0;
-}
+
+.card h3 { margin-top: 0; font-size: 1.4em; }
+.card p { font-size: 1.1em; color: #555; flex-grow: 1; }
+
 .card-link {
-    display: inline-block;
-    margin-top: 10px;
     font-weight: bold;
-    color: #007bff;
-    text-decoration: none;
+    color: #0660FE;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 50px;
+    padding: 30px 0 60px;
+    border-top: 1px solid #000;
+}
+
+footer ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+footer ul li { font-weight: bold; }
+
+footer ul li a {
+    font-size: 1.3em;
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .container { width: 90%; padding-top: 40px; }
+    h1 { font-size: 2.2em; }
+    p { font-size: 1.2em; }
+    .project-grid { grid-template-columns: 1fr; }
 }
