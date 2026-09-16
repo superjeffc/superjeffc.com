@@ -14,7 +14,7 @@ The platform functions as both a software portfolio and an application portal ro
 * **URL**: [https://optimize.superjeffc.com](https://optimize.superjeffc.com)
 * **Description**: An AI-powered web application built to analyze and optimize résumés for professionals. It helps users refine formatting, quantify achievements, and tailor content for competitive job markets.
 
-### 2. Jeff Chan Photography
+### 2. Photography
 * **URL**: [https://photography.superjeffc.com](https://photography.superjeffc.com)
 * **Description**: NYC portrait and lifestyle photography showcase featuring iconic location guides and an interactive session booking platform.
 
