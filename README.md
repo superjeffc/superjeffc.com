@@ -14,19 +14,23 @@ The platform functions as both a software portfolio and an application portal ro
 * **URL**: [https://optimize.superjeffc.com](https://optimize.superjeffc.com)
 * **Description**: An AI-powered web application built to analyze and optimize résumés for professionals. It helps users refine formatting, quantify achievements, and tailor content for competitive job markets.
 
-### 2. Word Frog
+### 2. Jeff Chan Photography
+* **URL**: [https://photography.superjeffc.com](https://photography.superjeffc.com)
+* **Description**: NYC portrait and lifestyle photography showcase featuring iconic location guides and an interactive session booking platform.
+
+### 3. Word Frog
 * **URL**: [https://wordfrog.superjeffc.com](https://wordfrog.superjeffc.com)
 * **Description**: An interactive browser-based word-guessing game designed to test and challenge user vocabulary with engaging gameplay mechanics.
 
-### 3. Big Bowl
+### 4. Big Bowl
 * **URL**: [https://bigbowl.superjeffc.com](https://bigbowl.superjeffc.com)
 * **Description**: A digital multiplayer word party game tailored for group events, parties, and social gatherings.
 
-### 4. Yut (Yut Nori)
+### 5. Yut (Yut Nori)
 * **URL**: [https://yut.superjeffc.com](https://yut.superjeffc.com) / `/yut/`
 * **Description**: A modern digital adaptation of the traditional Korean board game Yut Nori, rendered for web browsers.
 
-### 5. Recipe Collection & Blog
+### 6. Recipe Collection & Blog
 * **URL**: `/recipes/` & `/blog/`
 * **Description**: A static-generated content engine utilizing Jekyll collections to present recipes, cooking techniques, and product reviews.
 
